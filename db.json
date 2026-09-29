@@ -61,13 +61,13 @@
         { "id": 4, "numero": "45678901233", "categoria": "B", "validade": "2029-02-09" }
     ],
     "locacoes": [
-        { "id": 1, "carro": 2, "usuario": 1, "dataRetirada": "2026-09-10", "dataDevolucao": "2026-09-20", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 120.00, "status": "em andamento", "pagamento": 1, "seguro": 1 },
-        { "id": 2, "carro": 5, "usuario": 2, "dataRetirada": "2026-09-15", "dataDevolucao": "2026-09-25", "localRetirada": "Filial Aeroporto", "localDevolucao": "Filial Aeroporto", "valorDiaria": 130.00, "status": "em andamento", "pagamento": 2, "seguro": null },
-        { "id": 3, "carro": 8, "usuario": 3, "dataRetirada": "2026-09-05", "dataDevolucao": "2026-09-19", "localRetirada": "Filial Sul", "localDevolucao": "Filial Norte", "valorDiaria": 220.00, "status": "em andamento", "pagamento": 3, "seguro": 2 },
-        { "id": 4, "carro": 1, "usuario": 4, "dataRetirada": "2026-08-01", "dataDevolucao": "2026-08-10", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 150.00, "status": "concluída", "pagamento": 4, "seguro": null },
-        { "id": 5, "carro": 3, "usuario": 1, "dataRetirada": "2026-07-05", "dataDevolucao": "2026-07-12", "localRetirada": "Filial Sul", "localDevolucao": "Filial Sul", "valorDiaria": 140.00, "status": "concluída", "pagamento": 5, "seguro": 1 },
-        { "id": 6, "carro": 6, "usuario": 2, "dataRetirada": "2026-08-15", "dataDevolucao": "2026-08-22", "localRetirada": "Filial Aeroporto", "localDevolucao": "Filial Centro", "valorDiaria": 200.00, "status": "concluída", "pagamento": 6, "seguro": null },
-        { "id": 7, "carro": 9, "usuario": 3, "dataRetirada": "2026-06-10", "dataDevolucao": "2026-06-18", "localRetirada": "Filial Norte", "localDevolucao": "Filial Norte", "valorDiaria": 180.00, "status": "concluída", "pagamento": 7, "seguro": 2 }
+        { "id": 1, "carro": 2, "usuario": 1, "dataRetirada": "2026-09-10", "dataDevolucao": "2026-09-20", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 120.00, "status": "em andamento", "pagamento": 1, "seguro": 1, "multa": [1] },
+        { "id": 2, "carro": 5, "usuario": 2, "dataRetirada": "2026-09-15", "dataDevolucao": "2026-09-25", "localRetirada": "Filial Aeroporto", "localDevolucao": "Filial Aeroporto", "valorDiaria": 130.00, "status": "em andamento", "pagamento": 2, "seguro": null, "multa": [] },
+        { "id": 3, "carro": 8, "usuario": 3, "dataRetirada": "2026-09-05", "dataDevolucao": "2026-09-19", "localRetirada": "Filial Sul", "localDevolucao": "Filial Norte", "valorDiaria": 220.00, "status": "em andamento", "pagamento": 3, "seguro": 2, "multa": [2] },
+        { "id": 4, "carro": 1, "usuario": 4, "dataRetirada": "2026-08-01", "dataDevolucao": "2026-08-10", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 150.00, "status": "concluída", "pagamento": 4, "seguro": null, "multa": [] },
+        { "id": 5, "carro": 3, "usuario": 1, "dataRetirada": "2026-07-05", "dataDevolucao": "2026-07-12", "localRetirada": "Filial Sul", "localDevolucao": "Filial Sul", "valorDiaria": 140.00, "status": "concluída", "pagamento": 5, "seguro": 1, "multa": [] },
+        { "id": 6, "carro": 6, "usuario": 2, "dataRetirada": "2026-08-15", "dataDevolucao": "2026-08-22", "localRetirada": "Filial Aeroporto", "localDevolucao": "Filial Centro", "valorDiaria": 200.00, "status": "concluída", "pagamento": 6, "seguro": null, "multa": [3] },
+        { "id": 7, "carro": 9, "usuario": 3, "dataRetirada": "2026-06-10", "dataDevolucao": "2026-06-18", "localRetirada": "Filial Norte", "localDevolucao": "Filial Norte", "valorDiaria": 180.00, "status": "concluída", "pagamento": 7, "seguro": 2, "multa": [] }
     ],
     "pagamentos": [
         { "id": 1, "valor": 1200.00, "forma": "cartão de crédito", "status": "pendente", "data": "2026-09-10", "locacao": 1 },
@@ -81,5 +81,10 @@
     "seguros": [
         { "id": 1, "nome": "Seguro Básico", "descricao": "Cobertura contra colisão com franquia reduzida", "valorDiaria": 25.00 },
         { "id": 2, "nome": "Seguro Completo", "descricao": "Cobertura total contra colisão, roubo e furto sem franquia", "valorDiaria": 45.00 }
+    ],
+    "multas": [
+        { "id": 1, "tipoMulta": "Atraso", "valor": 80.00, "descricao": "Atraso na devolução do veículo", "locacao": 1 },
+        { "id": 2, "tipoMulta": "Atraso", "valor": 80.00, "descricao": "Atraso na devolução do veículo", "locacao": 3 },
+        { "id": 3, "tipoMulta": "Infração de trânsito", "valor": 195.23, "descricao": "Excesso de velocidade registrado durante o período da locação", "locacao": 6 }
     ]
 }
