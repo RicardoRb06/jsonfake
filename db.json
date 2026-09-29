@@ -23,5 +23,17 @@
         { "id": 3, "nome": "Ford" },
         { "id": 4, "nome": "Honda" },
         { "id": 5, "nome": "Chevrolet" }
+    ],
+    "modelos": [
+        { "id": 1, "nome": "Corolla", "categorias": [2], "marca": 1 },
+        { "id": 2, "nome": "Gol", "categorias": [3], "marca": 2 },
+        { "id": 3, "nome": "Ka", "categorias": [3], "marca": 3 },
+        { "id": 4, "nome": "Civic", "categorias": [2], "marca": 4 },
+        { "id": 5, "nome": "Onix", "categorias": [3], "marca": 5 },
+        { "id": 6, "nome": "Hilux", "categorias": [4], "marca": 1 },
+        { "id": 7, "nome": "T-Cross", "categorias": [1], "marca": 2 },
+        { "id": 8, "nome": "Ranger", "categorias": [4], "marca": 3 },
+        { "id": 9, "nome": "HR-V", "categorias": [1], "marca": 4 },
+        { "id": 10, "nome": "Tracker", "categorias": [1], "marca": 5 }
     ]
 }
