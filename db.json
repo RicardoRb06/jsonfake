@@ -5,6 +5,18 @@
         { "id": 3, "nome": "Hatch" },
         { "id": 4, "nome": "Picape" }
     ],
+    "caracteristicas": [
+        { "id": 1, "nome": "Ar condicionado" },
+        { "id": 2, "nome": "Direção hidráulica" },
+        { "id": 3, "nome": "Vidros elétricos" },
+        { "id": 4, "nome": "Trava elétrica" },
+        { "id": 5, "nome": "Airbag" },
+        { "id": 6, "nome": "Freios ABS" },
+        { "id": 7, "nome": "Câmbio automático" },
+        { "id": 8, "nome": "Central multimídia" },
+        { "id": 9, "nome": "Sensor de estacionamento" },
+        { "id": 10, "nome": "Câmera de ré" }
+    ],
     "marcas": [
         { "id": 1, "nome": "Toyota" },
         { "id": 2, "nome": "Volkswagen" },
