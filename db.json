@@ -1,0 +1,9 @@
+{
+    "marcas": [
+        { "id": 1, "nome": "Toyota" },
+        { "id": 2, "nome": "Volkswagen" },
+        { "id": 3, "nome": "Ford" },
+        { "id": 4, "nome": "Honda" },
+        { "id": 5, "nome": "Chevrolet" }
+    ]
+}
