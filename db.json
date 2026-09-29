@@ -61,9 +61,15 @@
         { "id": 4, "numero": "45678901233", "categoria": "B", "validade": "2029-02-09" }
     ],
     "locacoes": [
-        { "id": 1, "carro": 2, "usuario": 1, "dataRetirada": "2026-09-10", "dataDevolucao": "2026-09-20", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 120.00, "status": "em andamento" },
-        { "id": 2, "carro": 5, "usuario": 2, "dataRetirada": "2026-09-15", "dataDevolucao": "2026-09-25", "localRetirada": "Filial Aeroporto", "localDevolucao": "Filial Aeroporto", "valorDiaria": 130.00, "status": "em andamento" },
-        { "id": 3, "carro": 8, "usuario": 3, "dataRetirada": "2026-09-05", "dataDevolucao": "2026-09-19", "localRetirada": "Filial Sul", "localDevolucao": "Filial Norte", "valorDiaria": 220.00, "status": "em andamento" },
-        { "id": 4, "carro": 1, "usuario": 4, "dataRetirada": "2026-08-01", "dataDevolucao": "2026-08-10", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 150.00, "status": "concluída" }
+        { "id": 1, "carro": 2, "usuario": 1, "dataRetirada": "2026-09-10", "dataDevolucao": "2026-09-20", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 120.00, "status": "em andamento", "pagamento": 1 },
+        { "id": 2, "carro": 5, "usuario": 2, "dataRetirada": "2026-09-15", "dataDevolucao": "2026-09-25", "localRetirada": "Filial Aeroporto", "localDevolucao": "Filial Aeroporto", "valorDiaria": 130.00, "status": "em andamento", "pagamento": 2 },
+        { "id": 3, "carro": 8, "usuario": 3, "dataRetirada": "2026-09-05", "dataDevolucao": "2026-09-19", "localRetirada": "Filial Sul", "localDevolucao": "Filial Norte", "valorDiaria": 220.00, "status": "em andamento", "pagamento": 3 },
+        { "id": 4, "carro": 1, "usuario": 4, "dataRetirada": "2026-08-01", "dataDevolucao": "2026-08-10", "localRetirada": "Filial Centro", "localDevolucao": "Filial Centro", "valorDiaria": 150.00, "status": "concluída", "pagamento": 4 }
+    ],
+    "pagamentos": [
+        { "id": 1, "valor": 1200.00, "forma": "cartão de crédito", "status": "pendente", "data": "2026-09-10", "locacao": 1 },
+        { "id": 2, "valor": 1300.00, "forma": "pix", "status": "pendente", "data": "2026-09-15", "locacao": 2 },
+        { "id": 3, "valor": 3080.00, "forma": "boleto", "status": "pendente", "data": "2026-09-05", "locacao": 3 },
+        { "id": 4, "valor": 1350.00, "forma": "cartão de crédito", "status": "pago", "data": "2026-08-01", "locacao": 4 }
     ]
 }
